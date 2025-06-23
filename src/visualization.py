@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-def plot_exercise_map(exercise_map):
+def plot_exercise_map(exercise_map, save_path=None):
     x, y, c = [], [], []
     for i in range(exercise_map.shape[0]):
         for j in range(i + 1):
@@ -15,4 +15,7 @@ def plot_exercise_map(exercise_map):
     plt.colorbar(sc, label="1 = Exercise, 0 = Hold")
     plt.grid(True)
     plt.tight_layout()
+    if save_path:
+        plt.savefig(save_path, dpi=300)
+        print(f"Plot saved to {save_path}")
     plt.show()
