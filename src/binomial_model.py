@@ -75,4 +75,4 @@ if __name__ == "__main__":
     print(f"Difference (Early Exercise Value): {early_ex_val:.4f}")
 
     print("\nGenerating early exercise visualization...")
-    plot_exercise_map(exercise_map)
+    plot_exercise_map(exercise_map, save_path="../data/visualization_output/visualization_TSLA.png")
