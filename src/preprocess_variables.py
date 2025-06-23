@@ -20,7 +20,7 @@ for ticker in TICKERS:
     data = yf.download(ticker, start=START_DATE.strftime('%Y-%m-%d'), end=END_DATE.strftime('%Y-%m-%d'))
     close_prices = data["Close"].dropna()
 
-    # Spot Price (S₀)
+    # Spot Price (S_0)
     spot_price = close_prices.iloc[-1]
 
     # Log Return: rt = ln(P_t / P_t-1)
