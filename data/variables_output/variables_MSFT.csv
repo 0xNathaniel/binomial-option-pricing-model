@@ -1,0 +1,6 @@
+ticker,spot_price,volatility,risk_free_rate
+MSFT,"Ticker
+MSFT    487.019989
+Name: 2025-06-23 00:00:00, dtype: float64","Ticker
+MSFT    0.297513
+dtype: float64",0.04273
