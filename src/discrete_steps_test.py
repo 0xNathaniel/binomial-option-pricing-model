@@ -2,13 +2,13 @@ from binomial_model import binomial_american_call
 
 # Variables for Modeling (AAPL Case)
 
-SPOT_PRICE      = 201.3                 # Current spot price
+SPOT_PRICE      = 201.425               # Current spot price
 STRIKE_PRICE    = 250                   # Desired stock option strike price
 VOLATILITY      = 0.4126847810715328    # Utilize preprocessed variable calculation
 RISK_FREE_RATE  = 0.04273               # Jun 24, 2025 US 3 Month Treasury Yield
 T               = 175/365               # Desired time to maturity (in years)
 DIVIDEND_YIELD  = 0.005017384626591532  # Dividend yield
-N = [10, 100, 1000]                     # List of tested N
+N               = [10, 100, 1000]       # List of tested N
 
 # Premium price as of 23 June 2025 is $2.65 (market reference)
 
