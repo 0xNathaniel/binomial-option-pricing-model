@@ -16,17 +16,17 @@ DIVIDEND_YIELD  = 0.0        # q = dividend yield
 def binomial_american_call(
     spot_price, strike_price, volatility, risk_free_rate, T, N, dividend_yield
 ):
-    # Δt = T / N
+    # delta_t = T / N
     dt = T / N
 
-    # u = e^{σ√Δt}, d = 1/u
+    # u = e^{volatility.sqrt(delta_t)}, d = 1/u
     u = np.exp(volatility * np.sqrt(dt))
     d = 1 / u
 
     # p = (e^{(r - q)Δt} - d) / (u - d)
     p = (np.exp((risk_free_rate - dividend_yield) * dt) - d) / (u - d)
 
-    # Build asset price tree: S_{i,j} = S₀ * u^j * d^{i-j}
+    # Build asset price tree: S_{i,j} = S_0 * u^j * d^{i-j}
     price_tree = np.zeros((N + 1, N + 1))
     for j in range(N + 1):
         price_tree[N, j] = spot_price * (u ** j) * (d ** (N - j))
