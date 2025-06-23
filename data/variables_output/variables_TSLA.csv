@@ -1,6 +1,2 @@
-ticker,spot_price,volatility,risk_free_rate
-TSLA,"Ticker
-TSLA    351.690002
-Name: 2025-06-23 00:00:00, dtype: float64","Ticker
-TSLA    0.7784
-dtype: float64",0.04273
+ticker,spot_price,volatility,risk_free_rate,dividend_yield
+TSLA,349.74859619140625,0.7809725740223601,0.04273,0.0

@@ -1,6 +1,2 @@
-ticker,spot_price,volatility,risk_free_rate
-AAPL,"Ticker
-AAPL    201.75
-Name: 2025-06-23 00:00:00, dtype: float64","Ticker
-AAPL    0.408244
-dtype: float64",0.04273
+ticker,spot_price,volatility,risk_free_rate,dividend_yield
+AAPL,201.3000946044922,0.41268478107153284,0.04273,0.005017384626591532
