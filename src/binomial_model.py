@@ -23,7 +23,7 @@ def binomial_american_call(
     u = np.exp(volatility * np.sqrt(dt))
     d = 1 / u
 
-    # p = (e^{(r - q)Δt} - d) / (u - d)
+    # p = (e^{(r - q).delta_t} - d) / (u - d)
     p = (np.exp((risk_free_rate - dividend_yield) * dt) - d) / (u - d)
 
     # Build asset price tree: S_{i,j} = S_0 * u^j * d^{i-j}
