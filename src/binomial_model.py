@@ -7,7 +7,7 @@ SPOT_PRICE      = 351.70     # S₀ = current spot price
 STRIKE_PRICE    = 400        # K = strike price
 VOLATILITY      = 0.7784     # σ = annualized historical volatility
 RISK_FREE_RATE  = 0.04273    # r = risk-free rate
-T               = 175/365    # T = time to maturity (in years)
+T               = 178/365    # T = time to maturity (in years)
 N               = 100        # N = number of discrete steps
 DIVIDEND_YIELD  = 0.0        # q = dividend yield
 

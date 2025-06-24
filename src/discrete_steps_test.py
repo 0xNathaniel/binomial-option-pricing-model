@@ -6,7 +6,7 @@ SPOT_PRICE      = 201.425               # Current spot price
 STRIKE_PRICE    = 250                   # Desired stock option strike price
 VOLATILITY      = 0.4126847810715328    # Utilize preprocessed variable calculation
 RISK_FREE_RATE  = 0.04273               # Jun 24, 2025 US 3 Month Treasury Yield
-T               = 175/365               # Desired time to maturity (in years)
+T               = 178/365               # Desired time to maturity (in years)
 DIVIDEND_YIELD  = 0.005017384626591532  # Dividend yield
 N               = [10, 100, 1000]       # List of tested N
 
