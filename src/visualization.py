@@ -19,3 +19,19 @@ def plot_exercise_map(exercise_map, save_path=None):
         plt.savefig(save_path, dpi=300)
         print(f"Plot saved to {save_path}")
     plt.show()
+
+def plot_european_price_vs_n(N_list, european_prices, save_path=None):
+    """
+    Visualize European Call Option Price vs Number of Steps (N).
+    """
+    plt.figure(figsize=(8, 5))
+    plt.plot(N_list, european_prices, marker='o')
+    plt.title("European Call Option Price vs Number of Steps (N)")
+    plt.xlabel("Number of Steps (N)")
+    plt.ylabel("European Call Option Price")
+    plt.grid(True)
+    plt.tight_layout()
+    if save_path:
+        plt.savefig(save_path, dpi=300)
+        print(f"Plot saved to {save_path}")
+    plt.show()
