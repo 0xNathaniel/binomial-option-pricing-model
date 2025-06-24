@@ -17,7 +17,7 @@ def fetch_data(ticker, start_date, end_date):
 # Choice of Equity, Historical Data Length, and RFF
 
 TICKERS         = ["TSLA", "AAPL"]          # Desired equity options
-HISTORY_DAYS    = 175                       # 27 Jun 2025 to 19 Dec 2025
+HISTORY_DAYS    = 178                       # 24 Jun 2025 to 19 Dec 2025
 RISK_FREE_RATE  = 0.04273                   # Jun 24, 2025 US 3 Month Treasury Yield
 
 END_DATE = datetime.today()
