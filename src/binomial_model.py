@@ -3,13 +3,13 @@ from visualization import plot_exercise_map
 
 # Variables for Modeling (TSLA Case)
 
-SPOT_PRICE      = 351.70     # S₀ = current spot price
-STRIKE_PRICE    = 400        # K = strike price
-VOLATILITY      = 0.7784     # σ = annualized historical volatility
-RISK_FREE_RATE  = 0.04273    # r = risk-free rate
-T               = 178/365    # T = time to maturity (in years)
-N               = 100        # N = number of discrete steps
-DIVIDEND_YIELD  = 0.0        # q = dividend yield
+SPOT_PRICE      = 351.70     # S_0 = current spot price
+STRIKE_PRICE    = 400        # K   = strike price
+VOLATILITY      = 0.7783     #     = annualized historical volatility
+RISK_FREE_RATE  = 0.04273    # r   = risk-free rate
+T               = 178/365    # T   = time to maturity (in years)
+N               = 100        # N   = number of discrete steps
+DIVIDEND_YIELD  = 0.0        # q   = dividend yield
 
 # Premium price as of 23 June 2025 is $45.30 (market reference)
 
