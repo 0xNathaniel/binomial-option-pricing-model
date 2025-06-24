@@ -41,7 +41,7 @@ def binomial_american_call(
         american[N, j] = european[N, j]
 
     # Backward induction:
-    # V_{i,j} = e^{-rΔt} * (p * V_{i+1,j+1} + (1 - p) * V_{i+1,j})
+    # V_{i,j} = e^{-r.delta_t} * (p * V_{i+1,j+1} + (1 - p) * V_{i+1,j})
     for i in range(N - 1, -1, -1):
         for j in range(i + 1):
             cont_val = np.exp(-risk_free_rate * dt) * (
